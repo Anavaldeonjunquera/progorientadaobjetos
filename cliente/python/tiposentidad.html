@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seleccion entidad</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+</head>
+<body onLoad="obtenerentidades()">
+    <h1>Selección entidad</h1>
+    <div class="container">
+        <div class="col-md-12">
+            <div class="card">
+                <div class="card-header border">
+                    <h2>Entidades disponibles</h2>
+                </div>
+                <form>
+                    <div class="form-group">
+                        <select id="selector" class="form-control" onchange="location = this.value;">
+                            <option selected disabled="disabled">--Seleccione--</option> 
+                        </select>
+                    </div>
+                </form>
+                
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="../scripts/generalpython.js"></script>
+</body>
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cliente</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+</head>
+<body>
+    <h1>CreativeWork</h1>
+    <div class="container">
+        <div id="creativeWork" class="row">
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-header border" onclick="window.location.href='http:/localhost/ejemplos/ServidorPHP.php/creativework'">
+                        <h2>GET /creativework html</h2>
+                    </div>
+                </div>
+                <br>
+                <div class="card">
+                    <div id="getall" class="card-header border">
+                        <h2>GET /creativework</h2>
+                    </div>
+                    <form id="getallform" class="card-body">
+                        <input type="submit" value="Ejecutar" id="btn-get" class="btn btn-primary btn-block">
+                        <br>
+                        <textarea readonly class="form-control" name="getallentity" id="getallentity" rows="15"></textarea>
+                    </form> 
+                </div>
+                <br>
+                <div class="card">
+                    <div id="getid" class="card-header border">
+                        <h2>GET /creativework{id}</h2>
+                    </div>
+                    <form id="getidform" class="card-body">
+                        <label class="col-md-12">ID</label>
+                        <input type="text" class="col-md-12" id="idget"><br><br>
+                        <input type="submit" value="Ejecutar" id="getidbtn" class="btn btn-primary btn-block">
+                        <br>
+                        <textarea readonly class="form-control" name="getidentity" id="getidentity" rows="15"></textarea>
+                    </form>
+                </div>
+                <br>
+                <div class="card">
+                    <div id="post" class="card-header border">
+                        <h2>POST /creativework</h2>
+                    </div>
+                    <form id="postform" class="card-body">
+                        <textarea class="form-control" name="postentity" id="postentity" rows="10"></textarea><br>
+                        <input type="submit" value="Ejecutar" id="postbtn" class="btn btn-primary btn-block">
+                    </form>
+                </div>
+                <br>
+            </div>
+            <div class="col-md-6">
+                <div class="card">
+                    <div id="putid" class="card-header border">
+                        <h2>PUT /creativework{id}</h2>
+                    </div>
+                    <form id="putidform" class="card-body">
+                        <label class="col-md-12">ID</label>
+                        <input type="text" class="col-md-12" id="idput"><br><br>
+                        <textarea class="form-control" name="datosput" id="datosput" rows="15"></textarea><br>
+                        <input type="submit" value="Ejecutar" id="putidbtn" class="btn btn-primary btn-block">
+                    </form>
+                </div>
+                <br>
+                <div class="card">
+                    <div id="deleteid" class="card-header border">
+                        <h2>DELETE /creativework{id}</h2>
+                    </div>
+                    <form id="deleteidform" class="card-body">
+                        <label class="col-md-12">ID</label>
+                        <input id="iddelete" type="text" class="col-md-12"><br><br>
+                        <input type="submit" value="Ejecutar" id="deleteidbtn" class="btn btn-primary btn-block">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="../scripts/creativeworkclase.js"></script>
+    <script src="../scripts/script.js"></script>
+    <script src="../scripts/creativeWork.js"></script>
+</body>
+</html>

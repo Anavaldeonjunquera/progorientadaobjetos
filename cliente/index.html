@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Servidor</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+</head>
+<body>
+    <h1>Selección servidor</h1>
+    <div class="container">
+        <div class="col-md-12">
+            <div class="card border">
+                <div class="card-header text-center">
+                    <h4>Servidor</h4>
+                </div>
+                <div class="card-body  text-center">
+                    <input type="submit" value="Python" class="btn btn-primary" onClick="window.location='./python/tiposentidad.html';">
+                    <input type="submit" value="PHP" class="btn btn-primary" onClick="window.location='./php/tiposentidad.html';">
+                    <input type="submit" value="Node" class="btn btn-primary" onClick="window.location='./node/tiposentidad.html';">
+                </div>
+            </div>
+            <br>
+            <div class="card border"> 
+                <div class="card-header text-center">
+                    <h4>Contacto</h4>
+                </div>
+                <form id="contact-form" class="card-body">
+                    <div class="form-group">
+                        <label for="name">Nombre</label>
+                        <input type="text" id="name" placeholder="Nombre" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label for="surname">Apellidos</label>
+                        <input type="text" id="surname" placeholder="Apellidos" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label for="mail">Mail</label>
+                        <input type="email" id="mail" placeholder="Mail" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label for="tfno">Teléfono</label>
+                        <input type="number" id="tfno" placeholder="Tfno" class="form-control">
+                    </div>
+                    <input type="submit" id="submit" value="Enviar" class="btn btn-primary">
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="./scripts/validacionformulario.js"></script>
+</body>
+</html>
