@@ -1,0 +1,21 @@
+{
+    "id": 0,
+    "name": "El gol de Messi",
+    "isFamilyFriendly": true,
+    "isAccessibleForFree": true,
+    "copyrightYear": 2018,
+    "version": 1,
+    "articleSection": "deportes",
+    "pagination": "9-10",
+    "wordCount": 500
+},{
+    "id": 1,
+    "name": "Messi",
+    "isFamilyFriendly": true,
+    "isAccessibleForFree": false,
+    "copyrightYear": 2018,
+    "version": 1,
+    "articleSection": "deportes",
+    "pagination": "9-10",
+    "wordCount": 500
+}

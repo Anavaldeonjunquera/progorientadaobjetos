@@ -1,0 +1,23 @@
+{
+    "id": 4,
+    "name": "Moby Dick",
+    "isFamilyFriendly": true,
+    "isAccessibleForFree": true,
+    "copyrightYear": 1540,
+    "version": 3,
+    "bookEdition": "Tercera",
+    "isbn": "asdfasdfas",
+    "numberOfPages": 123,
+    "abridged": false
+},{
+    "id": 5,
+    "name": "El Quijote",
+    "isFamilyFriendly": true,
+    "isAccessibleForFree": true,
+    "copyrightYear": 1540,
+    "version": 3,
+    "bookEdition": "Tercera",
+    "isbn": "asdfasdfas",
+    "numberOfPages": 123,
+    "abridged": false
+}
