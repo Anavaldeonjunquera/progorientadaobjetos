@@ -4,7 +4,7 @@ function obtenerentidades(){
     $.ajax({
         
         method:'GET',
-        url:"http://localhost/ejemplos/ServidorPHP.php",
+        url:"http://156.35.95.97:8000/ejemplos/ServidorPHP.php",
         success:function(entidades){
             let misentidades=JSON.parse(entidades)
             for(let i=0;i<misentidades.length;i++){

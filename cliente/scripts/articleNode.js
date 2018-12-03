@@ -6,7 +6,7 @@ document.getElementById('getallform').addEventListener('submit',function(e){
             xhrObj.setRequestHeader("Accept","application/ld+json");
         },
         method:'GET',
-        url:"http://localhost:3000/article",
+        url:"http://156.35.95.97:3000/article",
         success:function(data){
             listadatos=JSON.parse(data);
             for(let i=0;i<listadatos.length;i++){
@@ -31,7 +31,7 @@ document.getElementById('getidform').addEventListener('submit', function(e){
             xhrObj.setRequestHeader("Accept","application/ld+json");
         },
         method:'GET',
-        url:"http://localhost:3000/article/"+idbuscar,
+        url:"http://156.35.95.97:3000/article/"+idbuscar,
         success:function(data){
             let articulo=new Article();
             let dato=JSON.parse(data)
@@ -49,7 +49,7 @@ document.getElementById('deleteidform').addEventListener('submit',function(e){
     let idbuscar=document.getElementById('iddelete').value;
     $.ajax({
         method:'DELETE',
-        url:"http://localhost:3000/article/"+idbuscar,
+        url:"http://156.35.95.97:3000/article/"+idbuscar,
         success:function(data){
             alert('Eliminado')
             
@@ -67,7 +67,7 @@ document.getElementById('postform').addEventListener('submit',function(e){
     $.ajax({
         method:'POST',
         data:JSON.stringify(datos),
-        url:"http://localhost:3000/article",
+        url:"http://156.35.95.97:3000/article",
         success:function(data){
             alert('Añadido');
         }
@@ -85,7 +85,7 @@ document.getElementById('putidform').addEventListener('submit',function(e){
     $.ajax({
         method:'PUT',
         data:JSON.stringify(datosput),
-        url:"http://localhost:3000/article/"+idmodificar,
+        url:"http://156.35.95.97:3000/article/"+idmodificar,
         success:function(data){
             alert('Modificado');
         }

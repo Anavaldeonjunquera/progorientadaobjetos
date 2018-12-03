@@ -7,7 +7,7 @@ document.getElementById('getallform').addEventListener('submit',function(e){
             xhrObj.setRequestHeader("Accept","application/ld+json");
         },
         method:'GET',
-        url:"http://localhost:5000/book",
+        url:"http://156.35.95.97:5000/book",
         success:function(data){
             document.getElementById('getallentity').value=data;
             listadatos=JSON.parse(data);
@@ -29,7 +29,7 @@ document.getElementById('getidform').addEventListener('submit', function(e){
     
     $.ajax({
         method:'GET',
-        url:"http://localhost:5000/book/"+idbuscar,
+        url:"http://156.35.95.97:5000/book/"+idbuscar,
         success:function(data){
             document.getElementById('getidentity').value=data;
             let dato=JSON.parse(data)
@@ -47,7 +47,7 @@ document.getElementById('deleteidform').addEventListener('submit',function(e){
     let idbuscar=document.getElementById('iddelete').value;
     $.ajax({
         method:'DELETE',
-        url:"http://localhost:5000/book/"+idbuscar,
+        url:"http://156.35.95.97:5000/book/"+idbuscar,
         success:function(data){
             alert('Eliminado')
             
@@ -65,7 +65,7 @@ document.getElementById('postform').addEventListener('submit',function(e){
     $.ajax({
         method:'POST',
         data:datos,
-        url:"http://localhost:5000/book",
+        url:"http://156.35.95.97:5000/book",
         success:function(data){
             alert('Añadido');
         }
@@ -83,7 +83,7 @@ document.getElementById('putidform').addEventListener('submit',function(e){
     $.ajax({
         method:'PUT',
         data:datosput,
-        url:"http://localhost:5000/book/"+idmodificar,
+        url:"http://156.35.95.97:5000/book/"+idmodificar,
         success:function(data){
             alert('Modificado');
         }
